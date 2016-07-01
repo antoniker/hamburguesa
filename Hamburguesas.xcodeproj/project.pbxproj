@@ -13,9 +13,11 @@
 		A8E42DDA1D2300920040F864 /* Hamburguesas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8E42DD81D2300920040F864 /* Hamburguesas.xcdatamodeld */; };
 		A8E42DDC1D2300920040F864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E42DDB1D2300920040F864 /* Assets.xcassets */; };
 		A8E42DDF1D2300920040F864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E42DDD1D2300920040F864 /* LaunchScreen.storyboard */; };
+		A8E42DE91D2301540040F864 /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E42DE81D2301540040F864 /* Datos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A89DFA561D26D3E300134FF1 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		A8E42DCE1D2300920040F864 /* Hamburguesas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hamburguesas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E42DD11D2300920040F864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8E42DD31D2300920040F864 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,7 @@
 		A8E42DDB1D2300920040F864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8E42DDE1D2300920040F864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8E42DE01D2300920040F864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8E42DE81D2301540040F864 /* Datos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +61,24 @@
 			children = (
 				A8E42DD11D2300920040F864 /* AppDelegate.swift */,
 				A8E42DD31D2300920040F864 /* ViewController.swift */,
+				A8E42DE81D2301540040F864 /* Datos.swift */,
 				A8E42DD51D2300920040F864 /* Main.storyboard */,
 				A8E42DDB1D2300920040F864 /* Assets.xcassets */,
 				A8E42DDD1D2300920040F864 /* LaunchScreen.storyboard */,
 				A8E42DE01D2300920040F864 /* Info.plist */,
 				A8E42DD81D2300920040F864 /* Hamburguesas.xcdatamodeld */,
+				A8E42DEA1D2301620040F864 /* Playground */,
 			);
 			path = Hamburguesas;
+			sourceTree = "<group>";
+		};
+		A8E42DEA1D2301620040F864 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				A89DFA561D26D3E300134FF1 /* MyPlayground.playground */,
+			);
+			name = Playground;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +113,7 @@
 				TargetAttributes = {
 					A8E42DCD1D2300920040F864 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = S4SW2HGX5C;
 					};
 				};
 			};
@@ -139,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8E42DD41D2300920040F864 /* ViewController.swift in Sources */,
+				A8E42DE91D2301540040F864 /* Datos.swift in Sources */,
 				A8E42DD21D2300920040F864 /* AppDelegate.swift in Sources */,
 				A8E42DDA1D2300920040F864 /* Hamburguesas.xcdatamodeld in Sources */,
 			);
@@ -255,10 +271,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Hamburguesas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.xquared.Hamburguesas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -266,10 +285,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Hamburguesas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.xquared.Hamburguesas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -292,6 +314,7 @@
 				A8E42DE51D2300920040F864 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
